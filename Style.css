@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(252, 188, 128);
+  background-image: linear-gradient(to left, whitesmoke, rgb(252, 188, 128));
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  gap: 2rem;
+  border-bottom: 0.5px solid gray;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+a:visited {
+  color: #333;
+}
+
+.container header {
+  padding: 0.8rem;
+  padding-right: 0;
+  color: black;
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+:where(.item1, .item2) {
+  display: flex;
+  gap: 1rem;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::where(.menu h1, .menu h2, .menu p, .details) {
+  color: #000;
+  text-align: justify;
+}
+
+:where(div h1, div h2, section header) {
+  text-align: center;
+}
+
+.flex3 {
+  display: flex;
+  gap: 25rem;
+}
+
+.om {
+  font-size: 70px;
+  font-size: 70px;
+  margin: 0;
+}
+
+.footer {
+  border: 0.5px solid rgb(111, 111, 120);
+  border-radius: 10px;
+  min-width: 600px;
+  min-height: auto;
+  margin: 0 25px 20px 20px;
+}
+
+.footflex {
+  display: flex;
+  gap: 5rem;
+}
+
+#Desserts {
+  display: flex;
+  gap: 4rem;
+  padding: 1rem;
+  align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 0%;
+}
+
+.d {
+  text-align: left;
+  color: #000;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-left: 200px;
+}
+
+:where(.b1, .b2, .b3, .b4) {
+  display: flex;
+  gap: 10rem;
+  justify-content: space-between;
+  color: #000;
+  font-size: 0.7rem;
+}
+
+#beverages {
+  padding: 15px;
+  margin: 10px 10px;
+}
+
+.b {
+  color: #000;
+  text-align: center;
+  margin-top: 0;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.line {
+  width: 1px;
+  height: 300px;
+  background-color: #000;
+  margin-bottom: 40px;
+}
+
+hr {
+  background-color: #000;
+  height: 500px;
+  width: 1px;
+  margin: 10px 30px 0 0;
+}
+
+:where(#Starters, #Main_Course, #Pasta) {
+  margin-bottom: 60px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.s {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+:where(.flex1, .flex2) {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.flex2 {
+  justify-content: center;
+}
+
+#flower1 {
+  height: 500;
+  padding: 10px;
+  margin-top: 30px 20px 0;
+}
+
+#flower2 {
+  height: 500;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.underl {
+  display: flex;
+  flex-direction: column;
+  gap: -10px;
+}
+
+:where(#Starters, #Main_Course, #Pasta):target {
+  transform: scale(1.5);
+  transition: 1.2;
+}
+
+.linee {
+  display: block;
+  width: 200px; /* or your desired width */
+  height: 100px;
+  align-self: center;
+  margin-top: -35px;
+  padding-top: 0;
+}
