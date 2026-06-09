@@ -1,3 +1,4 @@
+/* For desktops */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
@@ -11,8 +12,10 @@ body {
   background-image: linear-gradient(to left, whitesmoke, rgb(252, 188, 128));
   font-family: "Open Sans", sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
+/* container part  */
 .container {
   display: flex;
   justify-content: space-between;
@@ -45,129 +48,10 @@ a:visited {
   color: #333;
 }
 
-.container header {
+.flex1 {
   padding: 0.8rem;
   padding-right: 0;
   color: black;
-}
-
-.menu {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  padding: 1rem;
-}
-
-:where(.item1, .item2) {
-  display: flex;
-  gap: 1rem;
-  color: #000;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-::where(.menu h1, .menu h2, .menu p, .details) {
-  color: #000;
-  text-align: justify;
-}
-
-:where(div h1, div h2, section header) {
-  text-align: center;
-}
-
-.flex3 {
-  display: flex;
-  gap: 25rem;
-}
-
-.om {
-  font-size: 70px;
-  font-size: 70px;
-  margin: 0;
-}
-
-.footer {
-  border: 0.5px solid rgb(111, 111, 120);
-  border-radius: 10px;
-  min-width: 600px;
-  min-height: auto;
-  margin: 0 25px 20px 20px;
-}
-
-.footflex {
-  display: flex;
-  gap: 5rem;
-}
-
-#Desserts {
-  display: flex;
-  gap: 4rem;
-  padding: 1rem;
-  align-items: center;
-  margin-bottom: 0;
-  padding-bottom: 0%;
-}
-
-.d {
-  text-align: left;
-  color: #000;
-  font-weight: 600;
-  font-size: 3rem;
-  margin-left: 200px;
-}
-
-:where(.b1, .b2, .b3, .b4) {
-  display: flex;
-  gap: 10rem;
-  justify-content: space-between;
-  color: #000;
-  font-size: 0.7rem;
-}
-
-#beverages {
-  padding: 15px;
-  margin: 10px 10px;
-}
-
-.b {
-  color: #000;
-  text-align: center;
-  margin-top: 0;
-  padding: 1rem;
-  font-size: 3rem;
-}
-
-.nowrap {
-  white-space: nowrap;
-}
-
-.line {
-  width: 1px;
-  height: 300px;
-  background-color: #000;
-  margin-bottom: 40px;
-}
-
-hr {
-  background-color: #000;
-  height: 500px;
-  width: 1px;
-  margin: 10px 30px 0 0;
-}
-
-:where(#Starters, #Main_Course, #Pasta) {
-  margin-bottom: 60px;
-  margin-top: 0;
-  text-align: center;
-}
-
-.s {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
 :where(.flex1, .flex2) {
@@ -197,9 +81,14 @@ hr {
   gap: -10px;
 }
 
-:where(#Starters, #Main_Course, #Pasta):target {
-  transform: scale(1.5);
-  transition: 1.2;
+.flex3 {
+  display: flex;
+  gap: 42rem;
+}
+
+.om {
+  font-size: 70px;
+  margin: 0;
 }
 
 .linee {
@@ -209,4 +98,549 @@ hr {
   align-self: center;
   margin-top: -35px;
   padding-top: 0;
+}
+/* container part  end */
+
+/* menu part  */
+.menu {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+:where(.item1, .item2) {
+  display: flex;
+  gap: 2rem;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::where(.menu h1, .menu h2, .menu p, .details) {
+  color: #000;
+  text-align: justify;
+}
+
+:where(div h1, div h2, section header) {
+  text-align: center;
+}
+
+:where(#Starters, #Main_Course, #Pasta) {
+  margin-bottom: 60px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.s,
+.p1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.m .item1 {
+  gap: 4rem;
+}
+
+.m1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+:is(.s, .m1) :is(.item1, .item2) {
+  gap: 2.5rem;
+}
+
+:where(#Starters, #Main_Course, #Pasta):target {
+  transform: scale(1.5);
+  transition: 1.2;
+}
+
+:is(.m, .st, .p, ) :is(.item1, .item2) :is(h1) {
+  font-size: 2rem;
+  text-align: justify;
+  font-weight: bolder;
+}
+/* menu part :end */
+
+.footer {
+  border: 0.5px solid rgb(111, 111, 120);
+  border-radius: 10px;
+  min-width: 600px;
+  min-height: auto;
+  margin: 0 25px 20px 20px;
+}
+
+.footflex {
+  display: flex;
+  gap: 5rem;
+}
+
+/* Desserts part */
+
+#Desserts {
+  display: flex;
+  gap: 4rem;
+  padding: 1rem;
+  align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 0%;
+}
+
+.d {
+  text-align: left;
+  color: #000;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-left: 200px;
+}
+
+#Desserts :is(.item1, .item2) :is(h1) {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#Desserts :is(.item1, .item2) :is(h2, p) {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Dessert part end */
+
+/* Beverages part */
+:where(.b1, .b2, .b3, .b4) {
+  display: flex;
+  gap: 10rem;
+  justify-content: space-between;
+  color: #000;
+  font-size: 0.7rem;
+}
+
+#beverages {
+  padding: 15px;
+  margin: 10px 10px;
+}
+
+.b {
+  color: #000;
+  text-align: center;
+  margin-top: 0;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+/* Beverages part end  */
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* lines part */
+.line {
+  width: 1px;
+  height: 300px;
+  background-color: #000;
+  margin-bottom: 40px;
+}
+
+hr {
+  background-color: #000;
+  height: 500px;
+  width: 1px;
+  margin: 10px 30px 0 0;
+}
+/* lines part end  */
+
+:is(.m, .st, .p, #Desserts) :is(.item1, .item2) :is(h2, p) {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: justify;
+}
+
+/* mobile devices */
+
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* container part  */
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    gap: 15px;
+    border-bottom: 0.5px solid gray;
+  }
+
+  .flex1 {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .container header img {
+    width: 50px;
+    height: auto;
+  }
+
+  .flex1 h1 {
+    font-size: 0.7rem;
+    white-space: nowrap;
+    font-weight: bolder;
+  }
+
+  .flex1 h2 {
+    font-size: 0.5rem;
+    font-weight: 900;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  nav a {
+    white-space: nowrap;
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+
+  .om {
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  .linee {
+    display: block;
+    width: 60px; /* or your desired width */
+    height: 50px;
+    align-self: center;
+    margin-top: -20px;
+    padding-top: 0;
+  }
+
+  .underl {
+    display: flex;
+    flex-direction: column;
+    gap: -10px;
+  }
+
+  .flex2 {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .flex3 {
+    display: flex;
+    gap: 4rem;
+  }
+
+  #flower1 {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin-top: 30px 20px 0;
+  }
+
+  #flower2 {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin-left: 45px;
+  }
+
+  /* container part end  */
+
+  /* menu part  */
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  :where(#Starters, #Main_Course, #Pasta) {
+    margin-bottom: 25px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  :where(.item1, .item2) {
+    display: flex;
+    gap: 0.5rem;
+    color: #000;
+  }
+
+  .s {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    font-size: 0.7rem;
+  }
+
+  img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .cutlery {
+    width: 50px;
+    height: 50px;
+  }
+
+  hr {
+    background-color: #000;
+    height: 1px;
+    width: 500px;
+    margin: 10px 10px 0 0;
+  }
+
+  .item1,
+  .item2 {
+    gap: 2rem;
+  }
+
+  :is(.m, .st, .p, ) :is(.item1, .item2) :is(h1) {
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: bolder;
+  }
+
+  :is(.m, .st, .p, #Desserts) :is(.item1, .item2) :is(h2, p) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: justify;
+  }
+
+  .m .item1 {
+    gap: 4rem;
+  }
+
+  .m1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .s .item2 img {
+    width: 200px;
+    height: 100px;
+  }
+
+  .p1 .item2 img {
+    width: 150px;
+    height: 100px;
+  }
+  /* menu part*/
+
+  /* Dessert part */
+  .d {
+    text-align: left;
+    color: #000;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-left: 140px;
+  }
+
+  .line {
+    width: 380px;
+    height: 1px;
+    font-weight: bold;
+    color: #000;
+    /* margin: 2px 5px 10px 10px; */
+    margin-left: 40px;
+  }
+
+  #Desserts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.6rem;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 60px 0 0 0;
+  }
+
+  .details h1 {
+    font-size: 0.9rem;
+  }
+  .details p,
+  .details h2 {
+    font-size: 0.7rem;
+  }
+
+  /* spac after Desserts is important */
+  #Desserts :is(.item1 img, .item2 img) {
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+  }
+
+  #Desserts :is(.item1, .item2) :is(h1) {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  #Desserts :is(.item1, .item2) :is(h2, p) {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  #Desserts :is(.item1, .item2) {
+    gap: 3rem;
+  }
+  /* Desserts part end  */
+
+  .footer {
+    border: 0.5px solid rgb(111, 111, 120);
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: auto;
+    margin: 0 10px 10px 10px;
+  }
+
+  .footflex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Beverages part  */
+  .b {
+    color: #000;
+    text-align: center;
+    margin-top: 0;
+    padding: 0.7rem;
+    font-size: 2rem;
+  }
+
+  :where(.b1, .b2, .b3, .b4) {
+    display: flex;
+    gap: 8rem;
+    justify-content: space-between;
+    color: #000;
+    font-size: 0.7rem;
+  }
+
+  #beverages {
+    padding: 0 10px 10px 10px;
+    margin: 5px 5px;
+  }
+  /* Beverages part end  */
+}
+
+@media (max-width: 320px) {
+  .container {
+    gap: 10px;
+  }
+
+  .flex1 {
+    gap: 2.5px;
+  }
+
+  .om {
+    font-size: 25px;
+  }
+
+  .flex2 {
+    gap: 2px;
+    /* margin-left: 20px; */
+  }
+
+  #flower1,
+  #flower2 {
+    position: absolute;
+    left: -10000px;
+  }
+
+  :where(#Starters, #Main_Course, #Pasta) {
+    margin-bottom: 25px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .nowrap {
+    white-space: nowrap;
+  }
+
+  .m .item1 {
+    gap: 2rem;
+  }
+
+  .m1 :is(.item1, .item2) img {
+    width: 200px;
+    height: 90px;
+  }
+
+  .d {
+    text-align: center;
+    margin-left: 25px;
+    font-weight: bold;
+  }
+
+  #Desserts :is(.item1, .item2)img {
+    width: 200px;
+    height: 80px;
+  }
+
+  #Desserts :is(.item1, .item2) {
+    gap: 10px;
+  }
+
+  #Desserts :is(.item1, .item2) h1 {
+    font-size: 1.5rem;
+  }
+
+  .b {
+    text-align: center;
+    margin-top: 0;
+    padding: 0.7rem;
+    font-size: 2rem;
+  }
+
+  :where(.b1, .b2, .b3, .b4) {
+    gap: 4rem;
+    justify-content: space-between;
+    font-size: 0.6rem;
+  }
+
+  #beverages {
+    padding: 0 10px 10px 10px;
+    margin: 5px 5px;
+  }
+
+  .line {
+    width: 250px;
+    height: 1px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 20px;
+    margin-right: 5px;
+  }
 }
