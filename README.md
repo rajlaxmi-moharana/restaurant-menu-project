@@ -12,4 +12,4 @@ A simple restaurant menu website built using HTML and CSS.
 - CSS
 
 ## Live Demo
-https://rajlaxmi-moharana.github.io/restaurant-menu-project/
+ https://rajlaxmi-moharana.github.io/restaurant-menu-project/
